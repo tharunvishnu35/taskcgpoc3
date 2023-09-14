@@ -83,6 +83,6 @@ def main():
     db_ship_filtered.show()
 
     db_cust_filtered.write.mode('append').jdbc(url=db_properties["url"], table="customers_filtered", properties=db_properties)
-
+    #db_cust_filtered.write.mode('append').jdbc(url=db_properties["url"], table="customers_filtered", properties=db_properties)
 if __name__ == "__main__":
     main()
